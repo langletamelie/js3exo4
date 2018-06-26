@@ -2,7 +2,7 @@
 function check(){
   var mdp = document.getElementById('password').value;
   var confirm = document.getElementById('confirmPassword').value;
-  //déclaration de la regex
+  //déclaration de la variable regex
   var regex = /^[a-zA-Z0-9]+$/;
   if ((regex.test(mdp)) && (regex.test(confirm))){
     if (mdp != confirm){
@@ -18,4 +18,16 @@ function check(){
     //message d'erreur si utilisation de mauvais caractères
     alert('ne pas utiliser de caractères spéciaux');
   }
+}
+/*
+function check(){
+var mdp = document.getElementById('password');
+var confirm = document.getElementById('confirmPassword');
+if(mdp.value == confirm.value){
+mdp.style.border = 'green';
+confirm.style.borderColor = 'green';
+}else{
+mdp.style.borderColor = 'red';
+confirm.style.borderColor = 'red';
+}
 }
